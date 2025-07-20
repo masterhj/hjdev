@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto pt-24">
         {/* Profile Image */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
