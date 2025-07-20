@@ -2,39 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Futuristic Neon Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark background theme */
+    --background: 222 84% 4.9%;
+    --foreground: 180 100% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 84% 6%;
+    --card-foreground: 180 100% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 84% 6%;
+    --popover-foreground: 180 100% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Neon primary - Electric Blue */
+    --primary: 194 100% 50%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Neon secondary - Cyan */
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 222 84% 4.9%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 84% 10%;
+    --muted-foreground: 180 50% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neon accent - Magenta */
+    --accent: 320 100% 50%;
+    --accent-foreground: 222 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 84% 15%;
+    --input: 222 84% 10%;
+    --ring: 194 100% 50%;
+
+    /* Neon color palette */
+    --neon-blue: 194 100% 50%;
+    --neon-cyan: 180 100% 50%;
+    --neon-magenta: 320 100% 50%;
+    --neon-green: 120 100% 50%;
+    --neon-purple: 270 100% 50%;
+    --neon-orange: 30 100% 50%;
+
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(194 100% 50%), hsl(320 100% 50%));
+    --gradient-cyber: linear-gradient(45deg, hsl(180 100% 50%), hsl(270 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 4.9%), hsl(222 84% 8%));
+
+    /* Glows and shadows */
+    --glow-primary: 0 0 20px hsl(194 100% 50% / 0.5);
+    --glow-secondary: 0 0 20px hsl(180 100% 50% / 0.5);
+    --glow-accent: 0 0 20px hsl(320 100% 50% / 0.5);
+    --shadow-neon: 0 0 30px hsl(194 100% 50% / 0.3);
 
     --radius: 0.5rem;
 
@@ -55,42 +76,25 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Light theme kept minimal - primarily using dark neon theme */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 194 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 320 100% 40%;
+    --accent-foreground: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 194 100% 40%;
   }
 }
 
@@ -100,6 +104,100 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    overflow-x: hidden;
   }
+
+  /* Neon glow animations */
+  .neon-glow {
+    box-shadow: var(--glow-primary);
+    transition: all 0.3s ease;
+  }
+
+  .neon-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.8);
+    transform: translateY(-2px);
+  }
+
+  .neon-text {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  .cyber-grid {
+    background-image: 
+      linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@layer components {
+  .btn-neon {
+    @apply relative px-8 py-4 bg-transparent border-2 border-primary text-primary font-semibold rounded-lg;
+    @apply transition-all duration-300 overflow-hidden;
+    background: linear-gradient(45deg, transparent 30%, hsl(var(--primary) / 0.1) 50%, transparent 70%);
+    background-size: 200% 200%;
+    animation: shine 3s infinite;
+  }
+
+  .btn-neon::before {
+    content: '';
+    @apply absolute inset-0 bg-primary opacity-0 transition-opacity duration-300;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  .btn-neon:hover {
+    @apply text-background shadow-lg;
+    background-color: hsl(var(--primary));
+    box-shadow: 
+      0 0 20px hsl(var(--primary) / 0.5),
+      0 0 40px hsl(var(--primary) / 0.3),
+      0 0 60px hsl(var(--primary) / 0.1);
+    transform: translateY(-2px);
+  }
+
+  .btn-neon:hover::before {
+    opacity: 0.2;
+  }
+
+  .card-cyber {
+    @apply bg-card border border-primary/20 rounded-lg backdrop-blur-sm;
+    background: linear-gradient(135deg, hsl(var(--card) / 0.8), hsl(var(--card) / 0.4));
+    box-shadow: 0 8px 32px hsl(var(--primary) / 0.1);
+  }
+
+  .card-cyber:hover {
+    @apply border-primary/40;
+    box-shadow: 
+      0 8px 32px hsl(var(--primary) / 0.2),
+      inset 0 1px 0 hsl(var(--primary) / 0.1);
+    transform: translateY(-4px);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .border-glow {
+    box-shadow: inset 0 0 10px hsl(var(--primary) / 0.2);
+  }
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 30px hsl(var(--primary) / 0.6); }
 }
