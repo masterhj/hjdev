@@ -16,7 +16,7 @@ const techLogos: { [key: string]: string } = {
   "JavaScript": jsLogo,
   "TypeScript": tsLogo,
   "Node.js & Express": nodeLogo,
-  "Spring Boot": "https://spring.io/img/spring-logo.svg",
+  "Spring Boot": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/spring-boot-icon.png",
   "Django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
   "MongoDB": "https://www.mongodb.com/assets/images/global/favicon.ico",
   "Docker": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
