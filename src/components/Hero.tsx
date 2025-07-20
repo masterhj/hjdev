@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profileImage from "@/assets/himanshu-profile.jpg";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -42,7 +43,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-32 h-32 rounded-full border-4 border-primary shadow-glow-primary animate-pulse-glow">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                src={profileImage} 
                 alt="Himanshu Jaiswal"
                 className="w-full h-full rounded-full object-cover"
               />
