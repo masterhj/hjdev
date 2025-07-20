@@ -1,6 +1,27 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Server, Database, Cloud, Cpu, Globe } from "lucide-react";
+import reactLogo from "@/assets/react-logo.svg";
+import pythonLogo from "@/assets/python-logo.svg";
+import jsLogo from "@/assets/javascript-logo.png";
+import tsLogo from "@/assets/typescript-logo.svg";
+import nodeLogo from "@/assets/nodejs-logo.svg";
+import scalaLogo from "@/assets/scala-logo.png";
+
+const techLogos: { [key: string]: string } = {
+  "Java": "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
+  "Python": pythonLogo,
+  "Scala 3": scalaLogo,
+  "React": reactLogo,
+  "JavaScript": jsLogo,
+  "TypeScript": tsLogo,
+  "Node.js & Express": nodeLogo,
+  "Spring Boot": "https://spring.io/img/spring-logo.svg",
+  "Django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
+  "MongoDB": "https://www.mongodb.com/assets/images/global/favicon.ico",
+  "Docker": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+  "Kubernetes": "https://kubernetes.io/images/kubernetes-horizontal-color.png"
+};
 
 const skillCategories = [
   {
@@ -68,13 +89,21 @@ const Skills = () => {
                 
                 <div className="flex flex-wrap gap-2 justify-center">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge 
-                      key={skillIndex}
-                      variant="outline" 
-                      className={`border-${category.color}/30 text-${category.color} hover:bg-${category.color}/10 transition-colors duration-200 cursor-default`}
-                    >
-                      {skill}
-                    </Badge>
+                    <div key={skillIndex} className="flex items-center gap-1">
+                      {techLogos[skill] && (
+                        <img 
+                          src={techLogos[skill]} 
+                          alt={`${skill} logo`}
+                          className="w-4 h-4 object-contain"
+                        />
+                      )}
+                      <Badge 
+                        variant="outline" 
+                        className={`border-${category.color}/30 text-${category.color} hover:bg-${category.color}/10 transition-colors duration-200 cursor-default`}
+                      >
+                        {skill}
+                      </Badge>
+                    </div>
                   ))}
                 </div>
               </Card>
