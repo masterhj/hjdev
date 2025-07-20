@@ -20,7 +20,7 @@ const techLogos: { [key: string]: string } = {
   "Django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
   "MongoDB": "https://www.mongodb.com/assets/images/global/favicon.ico",
   "Docker": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
-  "Kubernetes": "https://kubernetes.io/images/kubernetes-horizontal-color.png"
+  "Kubernetes": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png"
 };
 
 const skillCategories = [
