@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-3 mb-6 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
           <Code className="text-neon-cyan" size={24} />
           <p className="text-xl md:text-2xl text-muted-foreground font-exo">
-            Full-Stack Developer | System Design Enthusiast
+            Full-Stack Developer | Backend & System Design Enthusiast
           </p>
           <Zap className="text-neon-magenta" size={24} />
         </div>
