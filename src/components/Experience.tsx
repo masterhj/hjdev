@@ -15,30 +15,61 @@ const techLogos: { [key: string]: string } = {
   "TypeScript": tsLogo,
   "Python": pythonLogo,
   "Node.js": nodeLogo,
+  "Java": "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
+  "OpenAPI": "https://raw.githubusercontent.com/OAI/OpenAPI-Style-Guide/master/graphics/o-logo-icon.png",
+  "Swagger": "https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg",
+  "Docker": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+  "Kubernetes": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "YAML": "https://raw.githubusercontent.com/yaml/yaml-spec/master/logo.svg",
+  "Git": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+  "Supabase": "https://seeklogo.com/images/S/supabase-logo-DCC634FFE8-seeklogo.com.png",
+  "PostgreSQL": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+  "Express": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
 };
 
 const experiences = [
   {
-    title: "Intern",
-    company: "Scala Center",
+    title: "Backend Developer Intern",
+    company: "openSUSE",
     program: "Google Summer of Code",
-    duration: "May 2025 – Aug 2025",
-    location: "Remote",
+    duration: "May 2026 – Aug 2026",
+    location: "Germany",
     type: "Internship",
     status: "upcoming",
-    description: "Selected for Google Summer of Code to contribute to Scala ecosystem projects.",
-    technologies: ["Scala 3", "Open Source", "Functional Programming"],
+    description: "Migrating Uyuni's legacy Javadoc API system to OpenAPI 3.0, covering 400+ handler methods across 65+ namespaces for SUSE's enterprise Linux management platform.",
+    achievements: [
+      "Engineered a custom annotation-driven pipeline to auto-generate OpenAPI YAML specs directly from Java handler source, eliminating manual documentation overhead."
+    ],
+    technologies: ["Java", "OpenAPI", "Swagger", "Python", "YAML", "Git", "Docker", "Kubernetes"],
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg"
+  },
+  {
+    title: "Open Source Contributor",
+    company: "Google Summer of Code",
+    program: "Scala Center",
+    duration: "May 2025 – Aug 2025",
+    location: "Remote",
+    type: "Open Source Program",
+    status: "completed",
+    description: "GSoC 2025 @ Scala Center — Developed ChatOps4s, an open source Scala library to integrate Slack APIs enabling seamless message posting, approval workflows and real-time interaction for automation.",
+    achievements: [
+      "Implemented extensible architecture with STTP backend support, ensuring testability, scalability, and easy integration into existing Scala projects with linear programming and nonlinear optimization."
+    ],
+    technologies: ["Scala 3", "Open Source", "Functional Programming", "STTP"],
     companyLogo: scalaLogo
   },
   {
-    title: "Frontend Developer", 
-    company: "BCCL",
-    duration: "May 2024 – June 2024",
-    location: "Remote",
+    title: "Web Development Intern",
+    company: "B.C.C.L",
+    duration: "May 2024 – July 2024",
+    location: "Dhanbad",
     type: "Internship",
     status: "completed",
-    description: "Developed responsive web applications and improved user interface components.",
-    technologies: ["React", "JavaScript", "CSS3", "HTML5"],
+    description: "Engineered scalable RESTful backend using Node.js, Express.js, and Supabase (PostgreSQL), handled and designed frontend and improved client–server response time by 35% through optimized server-side logic.",
+    achievements: [
+      "Architected and optimized PostgreSQL schemas with relational modeling, indexing, and RBAC-based authentication, reducing query execution time by 40% and enabling real-time data sync for 500+ records."
+    ],
+    technologies: ["Node.js", "Express", "Supabase", "PostgreSQL", "React", "JavaScript"],
     companyLogo: reactLogo
   }
 ];
@@ -115,6 +146,15 @@ const Experience = () => {
                       
                       {/* Description */}
                       <p className="text-foreground/90 mb-4">{exp.description}</p>
+                      
+                      {/* Achievements */}
+                      {exp.achievements && exp.achievements.length > 0 && (
+                        <ul className="list-disc list-inside space-y-1 mb-4 text-foreground/80">
+                          {exp.achievements.map((achievement, achIndex) => (
+                            <li key={achIndex}>{achievement}</li>
+                          ))}
+                        </ul>
+                      )}
                       
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">

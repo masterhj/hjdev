@@ -5,10 +5,10 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 
 const projects = [
   {
-    title: "Hotel Management System",
-    description: "A comprehensive hotel management system with booking, room management, and customer service features. Built with scalable architecture and modern UI.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop",
-    technologies: ["Java", "Spring Boot", "React", "MongoDB", "Docker"],
+    title: "QuizFlow-AI",
+    description: "AI-powered quiz and study platform with real-time learning tools and Web3 credential simulation. Built a full-stack AI-powered learning platform featuring dynamic quiz generation, DSA practice tracks, flashcard system with 3D flip animation, and a college notes revision hub with AI summarization.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Zustand", "Node.js", "OpenAI API"],
     role: "Full-Stack Developer",
     status: "Completed",
     links: {
@@ -17,11 +17,11 @@ const projects = [
     }
   },
   {
-    title: "Algo-Visualizer", 
-    description: "An interactive algorithm visualization tool that helps students understand complex algorithms through animated step-by-step execution.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop",
-    technologies: ["React", "D3.js", "TypeScript", "Node.js"],
-    role: "Frontend Developer",
+    title: "Restaurant Controller",
+    description: "A web-based application designed to enhance the dining experience for guests by providing a dynamic digital menu. Implemented server-side logic and API endpoints and integrated an AI ChatBox for the digital menu application using Node.js, reducing API response times by 30%.",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=250&fit=crop",
+    technologies: ["HTML", "CSS", "JavaScript", "React.js", "React Native", "Bootstrap", "Node.js", "OpenAI"],
+    role: "Full-Stack Developer",
     status: "Completed",
     links: {
       github: "#",
@@ -29,12 +29,12 @@ const projects = [
     }
   },
   {
-    title: "APIGate",
-    description: "A robust API gateway solution with rate limiting, authentication, and load balancing capabilities for microservices architecture.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
-    technologies: ["Golang", "Docker", "Kubernetes", "Redis", "PostgreSQL"],
-    role: "Backend Developer", 
-    status: "In Progress",
+    title: "Algorithm Visualizer",
+    description: "Designed and developed an Algorithm Visualizer that brings sorting, searching, and pathfinding algorithms to life with real-time animations and intuitive UI.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop",
+    technologies: ["React.js", "JavaScript", "Docker", "HTML", "MongoDB", "Postman"],
+    role: "Frontend Developer",
+    status: "Completed",
     links: {
       github: "#",
       demo: "#"
