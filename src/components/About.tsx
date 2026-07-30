@@ -14,13 +14,15 @@ const About = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-lg leading-relaxed text-foreground/90">
-                I am a full-stack developer dedicated to building robust and scalable applications 
-                from concept to deployment. My professional passion is centered on system design, 
-                where I focus on creating resilient architecture that can handle growth and complexity.
+                I am a full-stack developer and open-source contributor dedicated to building robust, 
+                scalable applications from concept to deployment. My professional passion is centered 
+                on backend engineering and system design, where I focus on creating resilient architecture 
+                that can handle growth and complexity.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                I am motivated by solving intricate problems and engineering elegant, high-quality 
-                code that forms the backbone of impactful products.
+                I am motivated by solving intricate problems and engineering elegant, high-quality code 
+                that forms the backbone of impactful products — from RESTful APIs and PostgreSQL schemas 
+                to OpenAPI-driven documentation pipelines.
               </p>
             </div>
           </div>

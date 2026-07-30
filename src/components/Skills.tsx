@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Server, Database, Cloud, Cpu, Globe } from "lucide-react";
+import { Code, Server, Database, Cloud, Cpu, Globe, Brain } from "lucide-react";
 import reactLogo from "@/assets/react-logo.svg";
 import pythonLogo from "@/assets/python-logo.svg";
 import jsLogo from "@/assets/javascript-logo.png";
@@ -11,16 +11,33 @@ import scalaLogo from "@/assets/scala-logo.png";
 const techLogos: { [key: string]: string } = {
   "Java": "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
   "Python": pythonLogo,
+  "Go": "https://go.dev/blog/go-brand/Go-Logo/SVG/go-logo-blue.svg",
   "Scala 3": scalaLogo,
-  "React": reactLogo,
+  "C++": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+  "C#": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg",
+  "C": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
   "JavaScript": jsLogo,
   "TypeScript": tsLogo,
-  "Node.js & Express": nodeLogo,
+  "React": reactLogo,
+  "Next.js": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+  "Node.js": nodeLogo,
+  "Express": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
   "Spring Boot": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/spring-boot-icon.png",
-  "Django": "https://static.djangoproject.com/img/logos/django-logo-negative.svg",
+  "Bootstrap": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+  "Tailwind CSS": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
   "MongoDB": "https://www.mongodb.com/assets/images/global/favicon.ico",
+  "MySQL": "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg",
+  "Supabase": "https://seeklogo.com/images/S/supabase-logo-DCC634FFE8-seeklogo.com.png",
   "Docker": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
-  "Kubernetes": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png"
+  "Kubernetes": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/kubernetes-icon.png",
+  "AWS": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+  "NumPy": "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
+  "Pandas": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
+  "TensorFlow": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
+  "PyTorch": "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg",
+  "Scikit-learn": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+  "Git": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+  "GitHub": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
 };
 
 const skillCategories = [
@@ -28,37 +45,37 @@ const skillCategories = [
     title: "Languages",
     icon: Code,
     color: "neon-blue",
-    skills: ["Java", "Python", "Golang", "Scala 3", "C++", "C"]
+    skills: ["Python", "Go", "Java", "JavaScript", "TypeScript", "C++", "C#", "C", "Scala 3"]
   },
   {
-    title: "Backend Frameworks",
+    title: "Frameworks & Libraries",
     icon: Server,
     color: "neon-green",
-    skills: ["Spring Boot", "Django", "Node.js & Express"]
+    skills: ["React", "Next.js", "Express", "Spring Boot", "Bootstrap", "Tailwind CSS", "Node.js"]
   },
   {
-    title: "Frontend",
-    icon: Globe,
+    title: "Machine Learning",
+    icon: Brain,
     color: "neon-magenta",
-    skills: ["React", "HTML5", "CSS3", "JavaScript", "TypeScript"]
+    skills: ["NumPy", "Pandas", "Scikit-learn", "TensorFlow", "PyTorch", "LLM APIs"]
   },
   {
     title: "Databases",
     icon: Database,
     color: "neon-cyan",
-    skills: ["MongoDB", "PostgreSQL", "MySQL"]
+    skills: ["MySQL", "MongoDB", "Supabase", "PostgreSQL"]
   },
   {
-    title: "DevOps/Cloud",
+    title: "DevOps / Cloud",
     icon: Cloud,
     color: "neon-purple",
-    skills: ["Docker", "Kubernetes", "AWS", "CI/CD"]
+    skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Git", "GitHub"]
   },
   {
     title: "Core Concepts",
     icon: Cpu,
     color: "neon-orange",
-    skills: ["OOPS", "RESTful APIs", "Scalable Architecture", "System Design"]
+    skills: ["DSA", "OOPS", "Operating System", "DBMS", "Computer Networks", "System Design", "RESTful APIs"]
   }
 ];
 
