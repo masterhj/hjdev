@@ -118,21 +118,46 @@ const Projects = () => {
 
                 {/* Action buttons */}
                 <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1 border-primary/30 hover:bg-primary/10 group"
+                  <a 
+                    href={project.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
                   >
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="flex-1 btn-neon text-sm py-2"
-                  >
-                    <Eye className="h-4 w-4 mr-2" />
-                    Demo
-                  </Button>
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full border-primary/30 hover:bg-primary/10 group"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </a>
+                  {project.links.demo ? (
+                    <a 
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button 
+                        size="sm" 
+                        className="w-full btn-neon text-sm py-2"
+                      >
+                        <Eye className="h-4 w-4 mr-2" />
+                        Demo
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button 
+                      size="sm" 
+                      className="flex-1 btn-neon text-sm py-2 opacity-60 cursor-not-allowed"
+                      disabled
+                    >
+                      <Eye className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>
