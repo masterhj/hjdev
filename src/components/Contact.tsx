@@ -25,15 +25,15 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "LinkedIn Profile",
-    href: "#",
+    value: "linkedin.com/in/himanshujaiswal07",
+    href: "https://www.linkedin.com/in/himanshujaiswal07",
     color: "neon-cyan"
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "GitHub Profile",
-    href: "#",
+    value: "github.com/masterhj",
+    href: "https://github.com/masterhj",
     color: "neon-magenta"
   }
 ];
