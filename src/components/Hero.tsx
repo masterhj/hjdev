@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Zap } from "lucide-react";
+import { ArrowRight, Code, Zap, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileImage from "@/assets/himanshu-profile.jpg";
 
