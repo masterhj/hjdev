@@ -166,10 +166,16 @@ const Projects = () => {
 
         {/* View more projects */}
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-secondary/30 hover:bg-secondary/10 text-lg px-8 py-3">
-            <ExternalLink className="mr-2 h-5 w-5" />
-            View All Projects
-          </Button>
+          <a 
+            href="https://github.com/masterhj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" className="border-secondary/30 hover:bg-secondary/10 text-lg px-8 py-3">
+              <ExternalLink className="mr-2 h-5 w-5" />
+              View All Projects
+            </Button>
+          </a>
         </div>
       </div>
     </section>
