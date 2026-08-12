@@ -82,6 +82,28 @@ const Hero = () => {
           </Button>
         </div>
 
+        {/* Social Links */}
+        <div className="flex items-center justify-center gap-4 mt-8 animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
+          <a 
+            href="https://github.com/masterhj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full border border-neon-magenta/30 text-neon-magenta hover:bg-neon-magenta/10 transition-all duration-300 hover:scale-105"
+          >
+            <Github className="h-4 w-4" />
+            <span className="text-sm font-medium">GitHub</span>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/himanshujaiswal07"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full border border-neon-cyan/30 text-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300 hover:scale-105"
+          >
+            <Linkedin className="h-4 w-4" />
+            <span className="text-sm font-medium">LinkedIn</span>
+          </a>
+        </div>
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
